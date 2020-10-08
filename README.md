@@ -37,11 +37,11 @@ To help users find possible custom icon themes, we have
 created some additional derived icon themes that Sigil
 users may decide to install themselves:
 
-* Legacy - pure svg versions of Sigil's icons pre Sigil 0.9.7
+* Legacy - pure svg versions of Sigil's icons pre Sigil 0.9.7.
 
 * Material Derivatives, each in one of the following
 base colours: blue, gray, lilac, orange, pink, and red
-specifically chosen to ve usable under both Light and Dark modes
+specifically chosen to be usable under both Light and Dark modes.
 
 See this repo's Releases to download the .rcc icon theme of your
 choice.
@@ -52,10 +52,10 @@ Installing a .rcc icon Theme into Sigil
 
 1. Download one of the .rcc files from Releases
 2. Rename it to "custom_icon_theme.rcc"
-3. Copy that file to your Sigil user preferences Folder
-      On macOS: "~/Library/Application Support/sigil-ebook/sigil/"
-      On Windows:
-      On Linux:
+3. Copy that file to your Sigil user preferences Folder:
+      * On macOS: "~/Library/Application Support/sigil-ebook/sigil/"
+      * On Windows:
+      * On Linux:
 
 An easier way to find your Sigil user preferences folder is to
 launch Sigil and navigate to the Preferences menu item.
@@ -67,8 +67,7 @@ Clicking this button should open a Window showing this folder.
 Drag and drop the .rcc file here.
 
 
-Once installed.  Fire Up Sigil and go to:
-
+Once installed.  Fire Up Sigil and go to
 Preferences->Appearance and select the Icon Themes tab.
 Make your selection and restart Sigil.
 
