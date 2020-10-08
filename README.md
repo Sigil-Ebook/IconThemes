@@ -16,16 +16,16 @@ use one of the three primnary icon themes provided with Sigil:
      * ![Main Icon Theme Dark](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Main_dark.png)
 
 * Fluent - icons derived from Microsoft's fluent icon set
-     https://github.com/microsoft/fluentui-system-icons
-     MIT License
-     ![Fluent Icon Theme Light](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Fluent.png)
-     ![Fluent Icon Theme Dark](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Fluent_dark.png)
+     * https://github.com/microsoft/fluentui-system-icons
+     * MIT License
+     * ![Fluent Icon Theme Light](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Fluent.png)
+     * ![Fluent Icon Theme Dark](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Fluent_dark.png)
      
 * Material - icons derived from Google's material icons:
-     https://github.com/google/material-design-icons
-     Apache License 2.0
-     ![Material Icon Theme Light](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Material.png)
-     ![Material Icon Theme Dark](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Material.png)
+     * https://github.com/google/material-design-icons
+     * Apache License 2.0
+     * ![Material Icon Theme Light](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Material.png)
+     * ![Material Icon Theme Dark](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Material_dark.png)
 
 In addition to these 3 main supported icon themes, Sigil allows
 users to install their own custom icon theme after compiling
