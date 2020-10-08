@@ -10,10 +10,10 @@ in icon sets referred to as "themes".  User's of Sigil can choose to
 use one of the three primnary icon themes provided with Sigil:
 
 * Main - Default set available in Sigil 1.0 and later:
-     https://github.com/Sigil-Ebook/Sigil/tree/master/src/Resource_Files/main
-     GPL3 and Open Library Icons
-     ![Main Icon Theme Light](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Main.png)
-     ![Main Icon Theme Dark](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Main_dark.png)
+     * https://github.com/Sigil-Ebook/Sigil/tree/master/src/Resource_Files/main
+     * GPL3 and Open Library Icons
+     * ![Main Icon Theme Light](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Main.png)
+     * ![Main Icon Theme Dark](https://github.com/Sigil-Ebook/Sigil/blob/master/src/Resource_Files/icon/Main_dark.png)
 
 * Fluent - icons derived from Microsoft's fluent icon set
      https://github.com/microsoft/fluentui-system-icons
