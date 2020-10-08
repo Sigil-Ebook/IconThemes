@@ -26,10 +26,10 @@ def main():
     if len(argv) != 3:
         print_usage()
         return -1
-    if argv[1].startswith('#') and len(argv[1] != 7):
+    if argv[1].startswith('#') and len(argv[1]) != 7:
         print_usage()
         return -1
-    elif argv[1] not in color_names:
+    elif not argv[1].startswith('#') and argv[1] not in color_names:
         print_usage()
         return -1
     if not os.path.isdir(argv[2]):
