@@ -1,0 +1,53 @@
+
+branches:
+  only:
+  - master
+   
+image:
+- Visual Studio 2017
+
+configuration: Release
+
+
+init:
+  - ps: $commit = $env:APPVEYOR_REPO_COMMIT.SubString(0,7)
+  - ps: $timestamp = $env:APPVEYOR_REPO_COMMIT_TIMESTAMP.SubString(0,10)
+  - ps: >-
+      if($env:APPVEYOR_REPO_TAG -eq 'true') {
+          Update-AppveyorBuild -Version ("{0}-{1}" -f $env:APPVEYOR_REPO_TAG_NAME, $commit)
+      }else {    
+          Update-AppveyorBuild -Version ("{0}-{1}-{2}" -f $env:APPVEYOR_REPO_BRANCH, $commit, $timestamp)
+      }
+
+
+environment:
+  global:
+    PYTHON: C:\Python38
+    QT: C:\Qt\5.6.3\msvc2015
+
+before_build:
+- cmd: |-
+    set PATH=%PYTHON%;%PYTHON%\Scripts;%QT%\bin;%PATH%
+    mkdir src\build
+    
+build_script:
+- cmd: |-
+    python .\ci_scripts\build_resources.py
+
+artifacts:
+  - path: '.\src\build\*.rcc'
+    name: compiled_resources
+
+deploy:
+  - provider: GitHub
+    auth_token:
+      secure: QM747yzK0qkUTP1k/zQXGbxvvWK97YQpC5+6oAX6FTCPI+jYlB2zf4mzdcFj/uPL
+    release: Custom Icon Themes ($(APPVEYOR_REPO_TAG_NAME))
+    tag: $(APPVEYOR_REPO_TAG_NAME)
+    description: '[Replace this text]'
+    artifact: compiled_resources
+    draft: true
+    on:
+      branch: master
+      APPVEYOR_REPO_TAG: true
+
