@@ -54,8 +54,8 @@ Installing a .rcc icon Theme into Sigil
 2. Rename it to "custom_icon_theme.rcc"
 3. Copy that file to your Sigil user preferences Folder:
       * On macOS: "~/Library/Application Support/sigil-ebook/sigil/"
-      * On Windows:
-      * On Linux:
+      * On Windows: "%localappdata%\sigil-ebook\sigil\
+      * On Linux: "~/.local/share/sigil-ebook/sigil\"
 
 An easier way to find your Sigil user preferences folder is to
 launch Sigil and navigate to the Preferences menu item.
