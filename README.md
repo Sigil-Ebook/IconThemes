@@ -43,12 +43,12 @@ users may decide to install themselves:
 * Material Derivatives, each in one of the following
 base colours: blue, gray, lilac, orange, pink, and red
 specifically chosen to be usable under both Light and Dark modes.
-     * ![Material Red Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-red.png)
-     * ![Material Orange Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-orange.png)
-     * ![Material Pink Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-pink.png)
-     * ![Material Gray Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-gray.png)
-     * ![Material Lilac Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-lilac.png)
-     * ![Material Blue Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-blue.png)
+     * ![Material Red Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/master/images/material-red.png)
+     * ![Material Orange Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/master/images/material-orange.png)
+     * ![Material Pink Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/master/images/material-pink.png)
+     * ![Material Gray Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/master/images/material-gray.png)
+     * ![Material Lilac Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/master/images/material-lilac.png)
+     * ![Material Blue Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/master/images/material-blue.png)
 
 See this repo's Releases to download the .rcc icon theme of your
 choice.
