@@ -38,10 +38,17 @@ created some additional derived icon themes that Sigil
 users may decide to install themselves:
 
 * Legacy - pure svg versions of Sigil's icons pre Sigil 0.9.7.
+     * ![Legacy Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/master/images/legacy.png)
 
 * Material Derivatives, each in one of the following
 base colours: blue, gray, lilac, orange, pink, and red
 specifically chosen to be usable under both Light and Dark modes.
+     * ![Material Red Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-red.png)
+     * ![Material Orange Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-orange.png)
+     * ![Material Pink Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-pink.png)
+     * ![Material Gray Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-gray.png)
+     * ![Material Lilac Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-lilac.png)
+     * ![Material Blue Icon Theme](https://github.com/Sigil-Ebook/IconThemes/blob/images/material-blue.png)
 
 See this repo's Releases to download the .rcc icon theme of your
 choice.
@@ -81,7 +88,7 @@ compiler, rcc) can create a complete set of icons
 matching the names provided in the src/main/folder here.
 
 You can use the command line to run rcc:
-rcc -binary PATH_TO_QRC_FILE
+rcc -binary -o PATH_TO_OUTPUT_FILE.RCC PATH_TO_QRC_FILE
 
 See the Qt docs on rcc for your version of Qt:
 https://doc.qt.io/qt-5/rcc.html
