@@ -6,8 +6,8 @@ Qt (and QtWebEngine). It is designed to edit books in ePub format
 (both ePub 2 and ePub 3).
 
 This repository holds the primary user interface icons used by Sigil
-in icon sets referred to as "themes".  User's of Sigil can choose to
-use one of the three primnary icon themes provided with Sigil:
+in icon sets referred to as "themes".  Users of Sigil can choose to
+use one of the three primary icon themes provided with Sigil:
 
 * Main - Default set available in Sigil 1.0 and later:
      * https://github.com/Sigil-Ebook/Sigil/tree/master/src/Resource_Files/main
