@@ -14,11 +14,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
-
       - name: Cache Qt
         id: cache-qt
         uses: actions/cache@v2
@@ -31,8 +26,12 @@ jobs:
         with:
           version: '5.9.1'
           dir: ${{runner.workspace}}/Qt
-          setup-python: 'true'
+          setup-python: 'True'
           cached: ${{ steps.cache-qt.outputs.cache-hit }}
 
       - name: Build RCC Files
-        run: python ./ci_scripts/build_resources.py
+        run: |
+          pwd
+          qmake -v
+          mkdir src/build
+          python ./ci_scripts/build_resources.py
