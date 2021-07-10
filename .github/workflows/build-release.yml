@@ -6,11 +6,11 @@ on:
     branches: 
       - master
 
-name: Create Release
+name: Build Release
 
 jobs:
   build:
-    name: Create Release
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
