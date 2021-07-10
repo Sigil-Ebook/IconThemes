@@ -29,9 +29,9 @@ jobs:
       - name: Install Qt
         uses: jurplel/install-qt-action@v2
         with:
-          version: '5.6.3'
+          version: '5.9.1'
           dir: ${{runner.workspace}}/Qt
-          setup-python: 'false'
+          setup-python: 'true'
           cached: ${{ steps.cache-qt.outputs.cache-hit }}
 
       - name: Build RCC Files
