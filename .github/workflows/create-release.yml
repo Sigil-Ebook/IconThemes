@@ -1,0 +1,52 @@
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - '*-*-*-*'
+
+name: Create Release
+
+jobs:
+  build:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Cache Qt
+        id: cache-qt
+        uses: actions/cache@v2
+        with:
+          path: ${{runner.workspace}}/Qt
+          key: ${{ runner.os }}-qttools-${{ hashFiles('**/reset-caches.txt') }}
+    
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v2
+        with:
+          version: '5.6.3'
+          dir: ${{runner.workspace}}/Qt
+          setup-python: 'false'
+          cached: ${{ steps.cache-qt.outputs.cache-hit }}
+
+      - name: Build RCC Files
+        run: python ./ci_scripts/build_resources.py
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref }}
+          name: Custom Icon Themes ${{ github.ref }}
+          body: |
+            Changes in this Release
+            - First Change
+            - Second Change
+          draft: true
+          prerelease: false
+          artifacts: './src/build/*.rcc'
