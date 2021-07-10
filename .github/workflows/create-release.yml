@@ -36,12 +36,15 @@ jobs:
           mkdir src/build
           python ./ci_scripts/build_resources.py
 
+      - name: Get tag name
+        id: get_tag_name
+        run: echo ::set-output name=TAGNAME::${GITHUB_REF/refs\/tags\//}
+
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref }}
-          name: Custom Icon Themes ${{ github.ref }}
+          name: Custom Icon Themes (${{ steps.get_tag_name.outputs.TAGNAME }})
           body: |
             Changes in this Release
             - First Change
