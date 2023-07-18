@@ -14,21 +14,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Cache Qt
         id: cache-qt
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ${{runner.workspace}}/Qt
           key: ${{ runner.os }}-qttools-${{ hashFiles('**/reset-caches.txt') }}
     
       - name: Install Qt
-        uses: jurplel/install-qt-action@v2
+        uses: jurplel/install-qt-action@v3
         with:
           version: '5.9.1'
           dir: ${{runner.workspace}}/Qt
-          setup-python: 'true'
+          setup-python: 'false'
           cached: ${{ steps.cache-qt.outputs.cache-hit }}
 
       - name: Build RCC Files
@@ -41,7 +41,7 @@ jobs:
       - name: Get tag name
         if: startswith( github.ref, 'refs/tags/')
         id: get_tag_name
-        run: echo ::set-output name=TAGNAME::${GITHUB_REF/refs\/tags\//}
+        run: echo "TAGNAME=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_OUTPUT
 
       - name: Create Release
         if: startswith( github.ref, 'refs/tags/')
