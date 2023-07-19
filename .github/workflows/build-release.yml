@@ -29,7 +29,7 @@ jobs:
           version: '5.9.1'
           dir: ${{runner.workspace}}/Qt
           setup-python: 'true'
-          cached: ${{ steps.cache-qt.outputs.cache-hit }}
+          cache: ${{ steps.cache-qt.outputs.cache-hit }}
 
       - name: Build RCC Files
         run: |
