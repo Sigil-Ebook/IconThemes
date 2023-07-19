@@ -29,6 +29,7 @@ jobs:
           version: '5.9.1'
           dir: ${{runner.workspace}}/Qt
           setup-python: 'true'
+          archives: 'qtbase qttools'
           cache: ${{ steps.cache-qt.outputs.cache-hit }}
 
       - name: Build RCC Files
