@@ -91,4 +91,4 @@ You can use the command line to run rcc:
 rcc -binary -o PATH_TO_OUTPUT_FILE.RCC PATH_TO_QRC_FILE
 
 See the Qt docs on rcc for your version of Qt:
-https://doc.qt.io/qt-5/rcc.html
+https://doc.qt.io/qt-6/rcc.html
